@@ -1,14 +1,14 @@
 // preiau contentul din body
 let site = String(document.getElementsByTagName("BODY")[0].outerHTML)
 
-function extractContent(s) {
+function extractContent_html(s) {
     // extrage textul din pagina
-    var span = document.createElement('span');
+    let span = document.createElement('span');
     span.innerHTML = s;
     return span.textContent || span.innerText;
 }
 
-let price = String(extractContent(site))
+let price = String(extractContent_html(site))
 let index_of_In_Rate = price.indexOf('In rate:') // iau pretul produselor ce pot fi laute in rate
 
 let price_final = price.substring(index_of_In_Rate-26,index_of_In_Rate-5)
