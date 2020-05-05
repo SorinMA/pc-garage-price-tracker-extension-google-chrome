@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "Price alert",
+    "version": "0.0.1",
+    "permissions": [
+        "activeTab",
+        "storage"
+    ],
+
+    "browser_action": {
+        "default_icon": "images/default_icon.png",
+        "default_popup": "html/default_popup.html",
+        "default_title": "Price alert"
+    },
+
+    "content_scripts": [
+        {
+          "matches": [
+            "<all_urls>"
+          ],
+          "js": ["js/content.js"]
+        }
+      ]
+}

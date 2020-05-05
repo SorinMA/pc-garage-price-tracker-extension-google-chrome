@@ -1,0 +1,12 @@
+Project ideea:
+    Nume: alerta scadere pret.
+    Tip aplicatie: extensie browser
+    WhatDo: preia url-ul paginii curente si salveaza pretul curent.
+            Daca reintru pe pagian respectiva si sunt modificari,
+            va aparea o alerta.
+
+TO_DO:
+    next app: selectez url-ul curent si (ai limita de 5 urluri) si iti va spune
+              daca s-a modificat ceva pe pagian respectiva (fara sa intrii pe ea)
+
+ps: extensia merge doar pt pcg (PCGarage)
